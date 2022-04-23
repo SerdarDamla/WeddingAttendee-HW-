@@ -1,0 +1,26 @@
+﻿
+@model WeddingAttendee
+
+@{
+    Layout = "_Layout";
+}
+
+    <form method="post">
+
+            <p><label asp-for="UserName"></label></p>
+            <input asp-for="UserName" placeholder="Kullanıcı Adı">
+            <span asp-validation-for="UserName"></span>
+
+            <p><label asp-for="Email"></label></p>
+            <input asp-for="Email" placeholder="E-Posta">
+            <span asp-validation-for="Email"></span>
+
+            <p><label asp-for="HowManyPeople"></label></p>
+            <input asp-for="HowManyPeople" placeholder="Kaç Kişi Katılacaksınız?">
+
+            <p><label asp-for="isComeWedding"></label></p>
+            <input asp-for ="isComeWedding" placeholder="Düğüne geliyor mu" />
+            <span asp-validation-for="isComeWedding"></span>
+            <p></p>
+            <button type="submit">Gönder</button>
+    </form>
